@@ -1,0 +1,25 @@
+{
+  "name": "open-music-api-queue-consumer-dicoding",
+  "version": "1.0.0",
+  "description": "About Build Open Music API Queue Consumer Dicoding",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuma-coffee/open-music-api-queue-consumer-dicoding.git"
+  },
+  "author": "kuma-coffee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kuma-coffee/open-music-api-queue-consumer-dicoding/issues"
+  },
+  "homepage": "https://github.com/kuma-coffee/open-music-api-queue-consumer-dicoding#readme",
+  "dependencies": {
+    "amqplib": "^0.10.3",
+    "dotenv": "^16.3.1",
+    "nodemailer": "^6.9.7",
+    "pq": "^0.0.3"
+  }
+}
