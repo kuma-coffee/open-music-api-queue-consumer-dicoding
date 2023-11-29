@@ -8,14 +8,11 @@ class Listener {
 
   async listen(message) {
     try {
-      const { playlistId, userId, targetEmail } = JSON.parse(
+      const { playlistId, targetEmail } = JSON.parse(
         message.content.toString()
       );
 
-      const songs = await this._songsService.getSongsOnPlaylist(
-        playlistId,
-        userId
-      );
+      const songs = await this._songsService.getSongsOnPlaylist(playlistId);
       const result = await this._mailSender.sendEmail(
         targetEmail,
         JSON.stringify(songs)
